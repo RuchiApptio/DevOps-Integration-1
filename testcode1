@@ -1,4 +1,4 @@
- // Function to filter Merge Requests
+// Function to filter Merge Requests
 const isPullRequestToMaster = (devopEvent) => {
   if (devopEvent.SourceEvent) {
     const githubEvent = devopEvent.SourceEvent.payload && (typeof devopEvent.SourceEvent.payload === 'string') ? JSON.parse(devopEvent.SourceEvent.payload) : devopEvent.SourceEvent;
